@@ -37,7 +37,7 @@ def set_tens_axis(ax, data, buffer=0.1):
     # 주 눈금 설정 (항상 10의 배수)
     ax.yaxis.set_major_locator(MultipleLocator(major_interval))
     # 보조 눈금 설정
-    ax.yaxis.set_minor_locator(MultipleLocator(major_interval/5))
+    ax.yaxis.set_minor_locator(MultipleLocator(major_interval/2))
     
     # 눈금 레이블 형식 설정 (항상 정수)
     ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: f"{int(x)}"))
